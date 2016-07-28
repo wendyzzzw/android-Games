@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project01.wengame.HangMan"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="project01.wengame.ScoreBoard"
+        tools:layout="@layout/fragment_score_board"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/hang_man"
+        android:textColor="#5171d7"
+        android:textSize="30sp"
+        android:paddingTop="10sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_hm_guesser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="@string/player_1"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 's turn, hint: it's a kind of fruit. "
+            android:textSize="20sp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:paddingTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_hm_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="@string/player_1"
+            android:textSize="20sp"
+            android:textColor="#cf407b"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'s life:"
+            android:textSize="20sp"
+            android:textColor="#cf407b"/>
+        <ImageView
+            android:id="@+id/hm_p1life1"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p1life2"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p1life3"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p1life4"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p1life5"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p1life6"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p1life7"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p1life8"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_hm_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="@string/player_2"
+            android:textSize="20sp"
+            android:textColor="#cf407b"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'s life:"
+            android:textSize="20sp"
+            android:textColor="#cf407b"/>
+        <ImageView
+            android:id="@+id/hm_p2life1"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p2life2"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p2life3"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p2life4"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p2life5"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p2life6"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p2life7"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+        <ImageView
+            android:id="@+id/hm_p2life8"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_life"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Word: "
+            android:textColor="#5171d7"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/hm_character1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ "
+            android:textSize="40sp"/>
+        <TextView
+            android:id="@+id/hm_character2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ "
+            android:textSize="40sp"/>
+        <TextView
+            android:id="@+id/hm_character3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ "
+            android:textSize="40sp"/>
+        <TextView
+            android:id="@+id/hm_character4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ "
+            android:textSize="40sp"/>
+        <TextView
+            android:id="@+id/hm_character5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_ "
+            android:textSize="40sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="40sp"
+        android:paddingLeft="40sp"
+        android:paddingTop="30sp"
+        android:paddingBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_guess_below"
+            android:textSize="20sp"
+            android:textColor="#5171d7"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/hm_et_guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="your input should be a character."
+            android:textColor="#5171d7"
+            android:textColorHint="#5171d7"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/hm_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:id="@+id/hm_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/game_result_will_be_shown_here"
+        android:textSize="22sp"
+        android:textColor="#1894e1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/hm_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_word"/>
+
+        <Button
+            android:id="@+id/hm_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_to_game_home"
+            android:onClick="backToHome"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

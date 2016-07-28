@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WenGame</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">OK!</string>
+    <string name="please_enter_your_names_here">Please enter your names here.</string>
+    <string name="welcome_to_wen_s_game">Welcome to Wen\'s Game!</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="connect_4">Connect 4</string>
+    <string name="score_board">Score Board</string>
+    <string name="player_1_name">Player 1 Name</string>
+    <string name="player_2_name">Player 2 Name</string>
+    <string name="player_1_score">Player 1 Score</string>
+    <string name="player_2_score">Player 2 Score</string>
+    <string name="goes_first_and_use"> goes first, and use </string>
+    <string name="game_result_will_be_shown_here">Game result will be shown here.</string>
+    <string name="replay">Replay!</string>
+    <string name="back_to_game_home">Back To Game Home</string>
+    <string name="hang_man">Hang Man</string>
+    <string name="enter_your_guess_below">Enter your guess below:</string>
+    <string name="change_word">Change Word</string>
+</resources>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project01.wengame.ConnectFour"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="project01.wengame.ScoreBoard"
+        tools:layout="@layout/fragment_score_board"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/connect_4"
+        android:textColor="#5171d7"
+        android:textSize="30sp"
+        android:paddingTop="10sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_c4_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="@string/player_1"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" goes first, and uses "
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pink" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_c4_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="@string/player_2"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" goes next, and uses "
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/c4_b0"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_go"/>
+        <ImageButton
+            android:id="@+id/c4_b1"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_go"/>
+        <ImageButton
+            android:id="@+id/c4_b2"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_go"/>
+        <ImageButton
+            android:id="@+id/c4_b3"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_go"/>
+        <ImageButton
+            android:id="@+id/c4_b4"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_go" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/c4_00"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_01"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_02"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_03"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_04"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/c4_10"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_11"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_12"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_13"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_14"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/c4_20"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_21"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_22"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_23"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_24"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/c4_30"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_31"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_32"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_33"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_34"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/c4_40"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_41"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_42"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_43"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+        <ImageView
+            android:id="@+id/c4_44"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_blank"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:id="@+id/c4_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/game_result_will_be_shown_here"
+        android:textSize="22sp"
+        android:textColor="#1894e1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/c4_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/replay"/>
+
+        <Button
+            android:id="@+id/c4_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_to_game_home"
+            android:onClick="backToHome"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

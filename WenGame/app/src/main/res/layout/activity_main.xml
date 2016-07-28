@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project01.wengame.MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/frag_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="project01.wengame.ScoreBoard"
+            tools:layout="@layout/fragment_score_board"/>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_game"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/p1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_wen_s_game"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textColor="#2953a7"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_enter_your_names_here"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textColor="#3a68c2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+            <EditText
+                android:id="@+id/et_player1_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/player_1"
+                android:gravity="center"
+                android:textColor="#6085cf"
+                android:textColorHint="#7595d7"
+                android:backgroundTint="#7595d7"/>
+            <EditText
+                android:id="@+id/et_player2_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="@string/player_2"
+                android:gravity="center"
+                android:textColor="#6085cf"
+                android:textColorHint="#7595d7"
+                android:backgroundTint="#7595d7"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textColor="#6085cf"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/game_ttt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/tic_tac_toe"
+            android:textColor="#2953a7"/>
+        <Button
+            android:id="@+id/game_c4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/connect_4"
+            android:textColor="#2953a7"/>
+        <Button
+            android:id="@+id/game_hm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/hang_man"
+            android:textColor="#2953a7"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
